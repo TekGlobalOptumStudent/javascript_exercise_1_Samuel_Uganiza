@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upside-down Trapezoid</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var width = prompt("Enter width");
+        var height = prompt("Enter height");
+        document.write("Input width: " + width + "<br>");
+        document.write("Input height: " + height + "<br>");
+        document.write("<br>");
+
+        if(width - (height * 2) + 1 < 0){
+            document.write("Impossible shape!");
+        } else {
+            document.write("Shape: <br>");
+            for(var i = 0; i < height; i++){
+                for(var j = 0; j < width; j++){
+                    if(j < i || j > width - i - 1){
+                        document.write("&nbsp&nbsp");
+                    } else {
+                        document.write("*");
+                    }
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</body>
+</html>

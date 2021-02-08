@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var width = prompt("Enter width");
+        var length = prompt("Enter length");
+        document.write("Input width: " + width + "<br>");
+        document.write("Input length: " + length + "<br>");
+        document.write("<br>");
+        document.write("Shape: <br>");
+        var swap = true;
+        for(var i = 0; i < length; i++){
+            for(var j = 0; j < width; j++){
+                if(swap){
+                    if(j % 2){
+                        document.write("&nbsp");
+                    } else {
+                        document.write("*");
+                    }
+                } else {
+                    if(j % 2){
+                        document.write("*");
+                    } else {
+                        document.write("&nbsp");
+                    }
+                }
+            }
+            document.write("<br>");
+            swap = !swap;
+        }
+    </script>
+</body>
+</html>

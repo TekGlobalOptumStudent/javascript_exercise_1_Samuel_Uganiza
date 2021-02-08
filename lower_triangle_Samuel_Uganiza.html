@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lower Triangle</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var length = prompt("Enter side length");
+        document.write("Input side length: " + length + "<br>");
+        document.write("<br>");
+        document.write("Shape: <br>");
+        for(var i = 0; i < length; i++){
+            for(var j = 0; j < i; j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
